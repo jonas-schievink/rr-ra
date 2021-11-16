@@ -2,4 +2,4 @@
 
 set -o errexit
 
-rr record ~/dev/rust-analyzer/target/release/rust-analyzer "$@"
+rr record -n --nested=release ~/dev/rust-analyzer/target/release/rust-analyzer "$@"
